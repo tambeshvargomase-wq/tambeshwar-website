@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambeshwar's website</title>
+
+    <style>
+   body {
+        background-color: lightblue;
+        text-align: center;
+        font-family: arial;
+        padding: 20px;
+  
+   } 
+
+ h1  {
+   
+    color: blue;
+    font-size: 40px;
+}
+
+p  {
+
+     background-color: white;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow: 3px 3px 10px gray;
+     font-size: 20px;
+}
+  
+h2  {
+   
+     color: darkblue;
+     margin-top: 30px;
+}
+
+button  {
+    background-color: blue;
+    color: white; 
+    padding: 12px 25px;
+    border: none; 
+    border-radius: 10px;
+    font-size: 16px
+
+}
+
+button:hover  {
+     
+      background-color: darkblue;
+      cursor: pointer;
+}
+    
+  </style>
+
+
+</head>
+
+<body>
+
+    <h1>welcome my website</h1>
+
+    <p>my name is tambeshwar.</p>
+
+    <h2>about me</h2> 
+
+
+ <p> 
+  i am learning web development.
+  my goal is to become web developer.
+ </p>
+   
+ <button onclick="alert('thank you for contacting
+me!')">
+ contact me
+</button>
+
+<h2>contact me</h2>
+
+<p>email: tambeshwar@example.com</p>
+
+<p>my goal is to become a professional web
+developer.</p>
+
+
+<footer>
+      <p> 2026 tambeshwar | my website</p>
+</footer>
+
+</body>
+</html>
