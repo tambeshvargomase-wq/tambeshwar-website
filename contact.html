@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me - Tambeshwar</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a8a,
+                #0f172a
+            );
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            padding: 15px;
+            background: rgba(17, 24, 39, 0.85);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin: 4px 5px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #60a5fa;
+            color: #111827;
+            transform: translateY(-3px);
+        }
+
+        nav a.active {
+            background: #60a5fa;
+            color: #111827;
+        }
+
+        /* HEADING */
+
+        h1 {
+            color: #60a5fa;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #dbeafe;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* CONTACT CARD */
+
+        .contact-box {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 35px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #dbeafe;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid rgba(96,165,250,0.7);
+            border-radius: 12px;
+            background: rgba(255,255,255,0.95);
+            color: #111827;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 15px rgba(96,165,250,0.35);
+        }
+
+        textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        /* SEND BUTTON */
+
+        .send-button {
+            background: #60a5fa;
+            color: #111827;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .send-button:hover {
+            background: white;
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        /* SUCCESS MESSAGE */
+
+        #message {
+            color: #60a5fa;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            min-height: 25px;
+        }
+
+        /* HOME BUTTON */
+
+        .back-button {
+            display: inline-block;
+            margin-top: 10px;
+            background: white;
+            color: #111827;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #60a5fa;
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            max-width: 1100px;
+            margin: 50px auto 0;
+            padding: 18px;
+            background: rgba(17,24,39,0.85);
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+
+        /* BACK TO TOP */
+
+        .backtop {
+            background: transparent;
+            color: #60a5fa;
+            border: 1px solid #60a5fa;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .backtop:hover {
+            background: #60a5fa;
+            color: #111827;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 20px 12px;
+            }
+
+            nav {
+                padding: 10px 5px;
+            }
+
+            nav a {
+                margin: 3px 2px;
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .contact-box {
+                padding: 25px 18px;
+                margin: 25px auto;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="skills.html">skills</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html" class="active">contact</a>
+    </nav>
+
+
+    <!-- CONTACT INTRO -->
+
+    <h1>Contact Me</h1>
+
+    <p class="subtitle">
+        Have a project or idea? Send me a message.
+    </p>
+
+       
+<!-- CONTACT FORM -->
+
+<div class="contact-box">
+
+    <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+    >
+
+        <input
+            type="hidden"
+            name="access_key"
+            value="5563bb46-ad06-4a3f-8c37-7255f2a6fd7b">
+
+        <label for="name">Your Name</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <label for="email">Your Email</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <label for="userMessage">Your Message</label>
+
+        <textarea
+            id="userMessage"
+            name="message"
+            placeholder="Enter your message"
+            required
+        ></textarea>
+
+        <button
+            type="submit"
+            class="send-button"
+        >
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+   
+        <p id="message"></p>
+
+    </div>
+
+
+    <!-- HOME BUTTON -->
+
+         
+    <a
+        href="index.html"
+        class="back-button"
+    >
+        Back to Home
+    </a>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+       <p> 2026 tambeshwar. all rights
+    reserved.</p>
+       <p>built whit HTML, CSS & JavaScript.</p>
+     </footer>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        class="backtop"
+        onclick="window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })"
+    >
+        Back to Top
+    </button>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function contactmessage() {
+
+            let name =
+                document.getElementById("name").value.trim();
+
+            let email =
+                document.getElementById("email").value.trim();
+
+            let userMessage =
+                document.getElementById("userMessage").value.trim();
+
+
+            if (name === "") {
+
+                alert("Please enter your name");
+
+                return;
+            }
+
+
+            if (email === "") {
+
+                alert("Please enter your email");
+
+                return;
+            }
+
+
+            if (!email.includes("@") || !email.includes(".")) {
+
+                alert("Please enter a valid email");
+
+                return;
+            }
+
+
+            if (userMessage === "") {
+
+                alert("Please enter your message");
+
+                return;
+            }
+
+
+            document.getElementById("message").innerHTML =
+                "Thank you for contacting me!";
+
+
+            document.getElementById("name").value = "";
+
+            document.getElementById("email").value = "";
+
+            document.getElementById("userMessage").value = "";
+
+        }
+
+    </script>
+
+</body>
+</html>

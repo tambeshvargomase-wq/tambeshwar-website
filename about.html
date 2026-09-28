@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>About Me - Tambeshwar</title>
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a8a,
+                #0f172a
+            );
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            padding: 15px;
+            text-align: center;
+            background: rgba(17, 24, 39, 0.95);
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            padding: 10px 15px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #60a5fa;
+            color: #111827;
+            transform: translateY(-3px);
+        }
+
+        nav a.active {
+            background: #60a5fa;
+            color: #111827;
+        }
+
+        /* TITLE */
+
+        h1 {
+            color: #60a5fa;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #dbeafe;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT BOX */
+
+        .about-box {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+        }
+
+        /* PROFILE */
+
+        .about-image {
+            flex: 0 0 220px;
+            text-align: center;
+        }
+
+        .profile {
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #60a5fa;
+            box-shadow: 0 0 20px rgba(96,165,250,0.35);
+            transition: 0.3s;
+        }
+
+        .profile:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px rgba(96,165,250,0.6);
+        }
+
+        /* TEXT */
+
+        .about-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .about-text h2 {
+            color: #60a5fa;
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #f8fafc;
+        }
+
+        /* HIGHLIGHTS */
+
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .highlights span {
+            background: #60a5fa;
+            color: #111827;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* BUTTON */
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 20px;
+            background: white;
+            color: #111827;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: #60a5fa;
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+
+        .site-footer {
+            max-width: 1100px;
+            margin: 40px auto 10px;
+            padding: 20px;
+            text-align: center;
+            background: rgba(17,24,39,0.95);
+            border-radius: 18px;
+        }
+
+        .site-footer p {
+            margin: 5px;
+            font-size: 14px;
+            color: white;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            nav a {
+                margin: 3px;
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .about-box {
+                flex-direction: column;
+                padding: 30px 20px;
+                gap: 25px;
+            }
+
+            .about-image {
+                flex: none;
+            }
+
+            .profile {
+                width: 180px;
+                height: 180px;
+            }
+
+            .about-text {
+                text-align: center;
+            }
+
+            .about-text h2 {
+                font-size: 26px;
+            }
+
+            .about-text p {
+                font-size: 16px;
+            }
+
+            .highlights {
+                justify-content: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <a href="index.html">
+            home
+        </a>
+
+        <a href="about.html"
+           class="active">
+            about
+        </a>
+
+        <a href="skills.html">
+            skills
+        </a>
+
+        <a href="projects.html">
+            projects
+        </a>
+
+        <a href="contact.html">
+            contact
+        </a>
+
+    </nav>
+
+
+    <!-- TITLE -->
+
+    <h1>
+        About Me
+    </h1>
+
+    <p class="subtitle">
+        Get to know me and my web development journey.
+    </p>
+
+
+    <!-- ABOUT -->
+
+    <div class="about-box">
+
+        <div class="about-image">
+
+            <img
+                src="bappa.jpg"
+                alt="Tambeshwar"
+                class="profile">
+
+        </div>
+
+
+        <div class="about-text">
+
+            <h2>
+                Hi, I'm Tambeshwar
+            </h2>
+
+            <p>
+                I am learning web development
+                and building websites using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                My goal is to become a skilled
+                web developer and create modern,
+                unique and useful websites.
+            </p>
+
+            <div class="highlights">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACK BUTTON -->
+
+    <a
+        href="index.html"
+        class="back-button">
+
+        ← Back to Home
+
+    </a>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Tambeshwar.
+            All rights reserved.
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
