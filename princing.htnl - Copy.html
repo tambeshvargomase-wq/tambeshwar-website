@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pricing | Premium Digital Studio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+nav {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+
+.pricing-hero {
+    text-align: center;
+    padding: 100px 20px 70px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #1e3a8a,
+            #020617 60%
+        );
+}
+
+.pricing-hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.pricing-hero h1 span {
+    color: #60a5fa;
+}
+
+.pricing-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 19px;
+}
+
+/* PRICING */
+
+.pricing-section {
+    padding: 80px 7%;
+}
+
+.pricing-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.price-card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: #60a5fa;
+}
+
+.price-card.featured {
+    border: 2px solid #2563eb;
+    transform: scale(1.03);
+}
+
+.price-card h2 {
+    color: #60a5fa;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price span {
+    font-size: 15px;
+    color: #94a3b8;
+}
+
+.price-card p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.price-card li {
+    color: #cbd5e1;
+    padding: 8px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.price-btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.price-btn:hover {
+    background: #3b82f6;
+    transform: translateY(-3px);
+}
+
+/* CUSTOM */
+
+.custom {
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e3a8a,
+            #2563eb
+        );
+}
+
+.custom h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.custom p {
+    color: #dbeafe;
+    margin-bottom: 25px;
+}
+
+.custom-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #01030b;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pricing-hero h1 {
+        font-size: 40px;
+    }
+
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+   <div class="nav-links">
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="pricing.html">Pricing</a>
+
+</div>
+</nav>
+
+
+   
+
+<!-- HERO -->
+
+<section class="pricing-hero">
+
+    <h1>
+        Choose Your <span>Plan</span>
+    </h1>
+
+    <p>
+        Flexible website packages designed for businesses,
+        professionals and growing brands.
+    </p>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="pricing-section">
+
+    <div class="pricing-container">
+
+
+        <!-- STARTER -->
+
+        <div class="price-card">
+
+            <h2>
+                Starter
+            </h2>
+
+            <div class="price">
+                ₹15,000+
+            </div>
+
+            <p>
+                Perfect for simple professional websites.
+            </p>
+
+            <ul>
+
+                <li>✔ Professional Design</li>
+
+                <li>✔ Responsive Website</li>
+
+                <li>✔ Up to 5 Pages</li>
+
+                <li>✔ Contact Form</li>
+
+                <li>✔ Basic SEO</li>
+
+            </ul>
+
+            <a href="contact.html" class="price-btn">
+                Get Started
+            </a>
+
+        </div>
+
+
+        <!-- BUSINESS -->
+
+        <div class="price-card featured">
+
+            <h2>
+                Business
+            </h2>
+
+            <div class="price">
+                ₹35,000+
+            </div>
+
+            <p>
+                For businesses that want a stronger online presence.
+            </p>
+
+            <ul>
+
+                <li>✔ Premium Design</li>
+
+                <li>✔ Responsive Website</li>
+
+                <li>✔ Up to 10 Pages</li>
+
+                <li>✔ Interactive Features</li>
+
+                <li>✔ Contact Form</li>
+
+                <li>✔ Basic SEO</li>
+
+            </ul>
+
+            <a href="contact.html" class="price-btn">
+                Choose Plan
+            </a>
+
+        </div>
+
+
+        <!-- PREMIUM -->
+
+        <div class="price-card">
+
+            <h2>
+                Premium
+            </h2>
+
+            <div class="price">
+                ₹75,000+
+            </div>
+
+            <p>
+                Advanced digital experience for serious brands.
+            </p>
+
+            <ul>
+
+                <li>✔ Premium UI / UX</li>
+
+                <li>✔ 10+ Pages</li>
+
+                <li>✔ Advanced Animations</li>
+
+                <li>✔ Interactive JavaScript</li>
+
+                <li>✔ SEO Setup</li>
+
+                <li>✔ Custom Features</li>
+
+            </ul>
+
+            <a href="contact.html" class="price-btn">
+                Start Project
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CUSTOM -->
+
+<section class="custom">
+
+    <h2>
+        Need a Custom Solution?
+    </h2>
+
+    <p>
+        Every project is different.
+        Contact us for a customized quotation.
+    </p>
+
+    <a href="contact.html" class="custom-btn">
+        Request Custom Quote
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Premium Digital Studio.
+        All rights reserved.
+    </p>
+
+    <p>
+        Built with HTML, CSS & JavaScript.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

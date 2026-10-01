@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Skills | Premium Digital Studio</title>
+<title>Why Choose Us | Premium Digital Studio</title>
 
 <style>
 
@@ -59,7 +57,7 @@ nav {
 
 /* HERO */
 
-.skills-hero {
+.why-hero {
     text-align: center;
     padding: 100px 20px 70px;
 
@@ -71,104 +69,101 @@ nav {
         );
 }
 
-.skills-hero h1 {
+.why-hero h1 {
     font-size: 55px;
     margin-bottom: 20px;
 }
 
-.skills-hero h1 span {
+.why-hero h1 span {
     color: #60a5fa;
 }
 
-.skills-hero p {
+.why-hero p {
     max-width: 700px;
     margin: auto;
     color: #cbd5e1;
     font-size: 19px;
 }
 
-/* SKILLS */
+/* WHY US */
 
-.skills-section {
+.why-section {
     padding: 80px 7%;
 }
 
-.skills-grid {
+.why-grid {
     max-width: 1100px;
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.skill-card {
+.why-card {
     background: #0f172a;
     border: 1px solid #1e293b;
-    padding: 30px;
+    padding: 35px;
     border-radius: 20px;
     transition: 0.3s;
 }
 
-.skill-card:hover {
+.why-card:hover {
     transform: translateY(-8px);
     border-color: #3b82f6;
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.18);
 }
 
-.skill-card h2 {
+.why-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.why-card h2 {
     color: #60a5fa;
     margin-bottom: 12px;
 }
 
-.skill-card p {
+.why-card p {
     color: #94a3b8;
-    margin-bottom: 20px;
 }
 
-/* PROGRESS */
+/* RESULTS */
 
-.skill-bar {
-    width: 100%;
-    height: 10px;
-    background: #1e293b;
-    border-radius: 10px;
-    overflow: hidden;
+.results {
+    padding: 80px 7%;
+    background: #0f172a;
 }
 
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        #2563eb,
-        #60a5fa
-    );
-
-    border-radius: 10px;
+.results-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
-.html {
-    width: 90%;
+.results-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-.css {
-    width: 85%;
+.result-box {
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
 }
 
-.javascript {
-    width: 75%;
+.result-box h2 {
+    color: #60a5fa;
+    font-size: 35px;
 }
 
-.uiux {
-    width: 80%;
-}
-
-.responsive {
-    width: 88%;
-}
-
-.performance {
-    width: 82%;
+.result-box p {
+    color: #94a3b8;
 }
 
 /* CTA */
@@ -197,11 +192,14 @@ nav {
 .cta a {
     display: inline-block;
     padding: 15px 30px;
+
     border: 1px solid white;
     border-radius: 10px;
+
     color: white;
     text-decoration: none;
     font-weight: bold;
+
     transition: 0.3s;
 }
 
@@ -234,12 +232,16 @@ footer {
         gap: 15px;
     }
 
-    .skills-hero h1 {
+    .why-hero h1 {
         font-size: 40px;
     }
 
-    .skills-grid {
+    .why-grid {
         grid-template-columns: 1fr;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cta h2 {
@@ -277,127 +279,206 @@ footer {
 
 </div>
 </nav>
-
+   
 
 <!-- HERO -->
 
-<section class="skills-hero">
+<section class="why-hero">
 
     <h1>
-        Our <span>Skills</span>
+        Why <span>Choose Us?</span>
     </h1>
 
     <p>
-        Technical skills and expertise used
-        to create modern, responsive and
-        professional digital experiences.
+        We combine modern design, clean development
+        and business-focused thinking to create
+        better digital experiences.
     </p>
 
 </section>
 
 
-<!-- SKILLS -->
+<!-- WHY US -->
 
-<section class="skills-section">
+<section class="why-section">
 
-    <div class="skills-grid">
+    <div class="why-grid">
 
 
-        <div class="skill-card">
+        <div class="why-card">
 
-            <h2>HTML</h2>
+            <div class="why-icon">
+                🎨
+            </div>
+
+            <h2>
+                Modern Design
+            </h2>
 
             <p>
-                Strong foundation in clean
-                and structured web pages.
+                Clean and premium interfaces
+                designed to create a strong
+                first impression.
             </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress html"></div>
-            </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="why-card">
 
-            <h2>CSS</h2>
+            <div class="why-icon">
+                📱
+            </div>
+
+            <h2>
+                Fully Responsive
+            </h2>
 
             <p>
-                Modern layouts, responsive
-                design and visual styling.
+                Websites built to look great
+                on phones, tablets and desktops.
             </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress css"></div>
-            </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="why-card">
 
-            <h2>JavaScript</h2>
+            <div class="why-icon">
+                ⚡
+            </div>
+
+            <h2>
+                Fast Performance
+            </h2>
 
             <p>
-                Interactive features and
-                dynamic website functionality.
+                Clean code and optimized
+                experiences for faster websites.
             </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress javascript"></div>
-            </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="why-card">
 
-            <h2>UI / UX</h2>
+            <div class="why-icon">
+                🎯
+            </div>
+
+            <h2>
+                Business Focused
+            </h2>
 
             <p>
-                Clean interfaces focused on
-                usability and user experience.
+                Every section is designed
+                around real business goals.
             </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress uiux"></div>
-            </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="why-card">
 
-            <h2>Responsive Design</h2>
+            <div class="why-icon">
+                🔧
+            </div>
+
+            <h2>
+                Custom Solutions
+            </h2>
 
             <p>
-                Websites designed to work
-                smoothly across all devices.
+                Features and layouts can be
+                customized for different projects.
             </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress responsive"></div>
-            </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="why-card">
 
-            <h2>Performance</h2>
+            <div class="why-icon">
+                🤝
+            </div>
+
+            <h2>
+                Professional Support
+            </h2>
 
             <p>
-                Focus on fast loading,
-                clean code and better performance.
+                Clear communication and
+                reliable project support.
             </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress performance"></div>
-            </div>
 
         </div>
 
+
+    </div>
+
+</section>
+
+
+<!-- RESULTS -->
+
+<section class="results">
+
+    <h2 class="results-title">
+        Our Focus
+    </h2>
+
+    <div class="results-grid">
+
+        <div class="result-box">
+
+            <h2>
+                100%
+            </h2>
+
+            <p>
+                Responsive
+            </p>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>
+                24/7
+            </h2>
+
+            <p>
+                Digital Presence
+            </p>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>
+                6+
+            </h2>
+
+            <p>
+                Core Skills
+            </p>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>
+                10
+            </h2>
+
+            <p>
+                Website Pages
+            </p>
+
+        </div>
 
     </div>
 
@@ -409,12 +490,12 @@ footer {
 <section class="cta">
 
     <h2>
-        Let's Build Something Great
+        Ready to Grow Online?
     </h2>
 
     <p>
-        Have an idea? Let's turn it
-        into a professional website.
+        Let's create a website built
+        around your goals.
     </p>
 
     <a href="contact.html">

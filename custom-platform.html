@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Platforms | Premium Studio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #020617;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            width: 100%;
+            padding: 20px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #ffffff;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            box-shadow:
+                0 4px 20px rgba(15, 23, 42, 0.12);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0f172a;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #1e293b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 75vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 100px 20px;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(37, 99, 235, 0.25),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(124, 58, 237, 0.22),
+                    transparent 35%
+                ),
+                #020617;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 25px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #60a5fa,
+                    #a78bfa,
+                    #22d3ee
+                );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 90px 7%;
+            background: #f8fafc;
+            color: #0f172a;
+            text-align: center;
+        }
+
+        .section.dark {
+            background: #020617;
+            color: white;
+        }
+
+        .section h2 {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        .dark .subtitle {
+            color: #94a3b8;
+        }
+
+        /* CARDS */
+
+        .card-grid {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .card {
+            padding: 32px 25px;
+
+            background: white;
+
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(15, 23, 42, 0.06);
+
+            transition: 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+
+            border-color: #93c5fd;
+
+            box-shadow:
+                0 20px 45px
+                rgba(37, 99, 235, 0.15);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+
+            margin: 0 auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #dbeafe,
+                    #ede9fe
+                );
+
+            font-size: 28px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 100px 7%;
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(37, 99, 235, 0.25),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(124, 58, 237, 0.22),
+                    transparent 35%
+                ),
+                #0f172a;
+        }
+
+        .cta h2 {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            font-size: 18px;
+
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 15px 30px;
+
+            background: #2563eb;
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 12px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 50px 7% 25px;
+            background: #020617;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin-bottom: 12px;
+        }
+
+        footer p {
+            color: #94a3b8;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            padding-top: 20px;
+
+            border-top: 1px solid #1e293b;
+
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 70px 20px;
+            }
+
+            .section h2 {
+                font-size: 32px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta {
+                padding: 70px 20px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Custom Platforms
+        </h1>
+
+        <p>
+            Powerful digital platforms built around
+            your unique business requirements,
+            ideas and goals.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- WHAT IS CUSTOM PLATFORM -->
+
+<section class="section">
+
+    <h2>
+        What Are Custom Platforms?
+    </h2>
+
+    <p class="subtitle">
+        Custom platforms are specially designed
+        digital systems created to solve specific
+        business needs and workflows.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+
+            <div class="card-icon">
+                ⚙️
+            </div>
+
+            <h3>
+                Custom Features
+            </h3>
+
+            <p>
+                Features are designed according
+                to your exact requirements.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🧩
+            </div>
+
+            <h3>
+                Flexible Structure
+            </h3>
+
+            <p>
+                Build a platform that can grow
+                with your business.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🚀
+            </div>
+
+            <h3>
+                Scalable Solution
+            </h3>
+
+            <p>
+                Create a strong foundation for
+                future improvements and growth.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHAT WE CAN BUILD -->
+
+<section class="section dark">
+
+    <h2>
+        What We Can Build
+    </h2>
+
+    <p class="subtitle">
+        From simple business systems to advanced
+        digital platforms, we can build solutions
+        around your idea.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+
+            <div class="card-icon">
+                📊
+            </div>
+
+            <h3>
+                Business Dashboards
+            </h3>
+
+            <p>
+                Organized dashboards for managing
+                business information and activities.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                👥
+            </div>
+
+            <h3>
+                User Platforms
+            </h3>
+
+            <p>
+                Interactive platforms where users
+                can create and manage accounts.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📅
+            </div>
+
+            <h3>
+                Booking Systems
+            </h3>
+
+            <p>
+                Custom booking and appointment
+                systems for different businesses.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🛠️
+            </div>
+
+            <h3>
+                Management Systems
+            </h3>
+
+            <p>
+                Digital tools designed to simplify
+                business management.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🔐
+            </div>
+
+            <h3>
+                Secure Platforms
+            </h3>
+
+            <p>
+                Structured platforms with
+                user-focused access and features.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                💡
+            </div>
+
+            <h3>
+                Unique Ideas
+            </h3>
+
+            <p>
+                Digital experiences created around
+                your unique idea or business model.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DEVELOPMENT PROCESS -->
+
+<section class="section">
+
+    <h2>
+        Development Process
+    </h2>
+
+    <p class="subtitle">
+        A clear process helps turn your idea
+        into a working digital platform.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+
+            <div class="card-icon">
+                01
+            </div>
+
+            <h3>
+                Discussion
+            </h3>
+
+            <p>
+                Understand your requirements,
+                goals and platform idea.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                02
+            </div>
+
+            <h3>
+                Planning
+            </h3>
+
+            <p>
+                Plan features, structure and
+                overall user experience.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                03
+            </div>
+
+            <h3>
+                Development
+            </h3>
+
+            <p>
+                Build the platform using
+                modern web technologies.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                04
+            </div>
+
+            <h3>
+                Testing
+            </h3>
+
+            <p>
+                Test features and improve the
+                overall platform experience.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                05
+            </div>
+
+            <h3>
+                Launch
+            </h3>
+
+            <p>
+                Prepare the completed platform
+                for its final launch.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Have a Unique Platform Idea?
+    </h2>
+
+    <p>
+        Let's turn your idea into a powerful
+        and professional digital experience.
+    </p>
+
+    <a
+        href="start-project.html"
+        class="btn">
+
+        Start Your Project →
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>
+        Premium Studio
+    </h2>
+
+    <p>
+        Creating modern digital experiences
+        for businesses, professionals and brands.
+    </p>
+
+    <div class="footer-bottom">
+
+        © 2026 Premium Digital Studio.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

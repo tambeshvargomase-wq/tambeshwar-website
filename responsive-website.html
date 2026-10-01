@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Websites | Premium Digital Studio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    padding: 20px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.10);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(2, 6, 23, 0.90),
+            rgba(15, 23, 42, 0.78)
+        );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa,
+            #22d3ee
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* SECTION */
+
+.section {
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 50px;
+
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* CARDS */
+
+.grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 32px;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+
+    transition: 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.15);
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* FEATURES */
+
+.features {
+    background: #ffffff;
+}
+
+/* PROCESS */
+
+.process-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+/* CTA */
+
+.cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.cta p {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 7%;
+
+    background: #020617;
+
+    color: #94a3b8;
+
+    text-align: center;
+}
+
+footer strong {
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+
+    </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Responsive Websites</h1>
+
+        <p>
+            Modern websites that look beautiful
+            and work smoothly across mobile,
+            tablet and desktop devices.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- WHAT IS RESPONSIVE DESIGN -->
+
+<section class="section">
+
+    <h2>What Is Responsive Design?</h2>
+
+    <p class="section-subtitle">
+        Responsive design makes your website
+        automatically adapt to different screen
+        sizes and devices.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="icon">📱</div>
+
+            <h3>Mobile Friendly</h3>
+
+            <p>
+                Your website works smoothly
+                on smartphones of different sizes.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>Desktop Ready</h3>
+
+            <p>
+                Clean layouts designed for
+                larger desktop screens.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">📲</div>
+
+            <h3>Tablet Support</h3>
+
+            <p>
+                The layout automatically adapts
+                to tablet screen sizes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="section features">
+
+    <h2>What's Included</h2>
+
+    <p class="section-subtitle">
+        A responsive website designed for
+        a smooth experience on every device.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="icon">🎨</div>
+
+            <h3>Modern Layout</h3>
+
+            <p>
+                Clean and professional layouts
+                that adapt to screen sizes.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">⚡</div>
+
+            <h3>Fast Performance</h3>
+
+            <p>
+                Lightweight structure for
+                faster loading and browsing.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🧭</div>
+
+            <h3>Easy Navigation</h3>
+
+            <p>
+                Simple navigation that works
+                comfortably on mobile devices.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🔍</div>
+
+            <h3>SEO Friendly</h3>
+
+            <p>
+                Responsive structure that supports
+                better search engine accessibility.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">✨</div>
+
+            <h3>Smooth Experience</h3>
+
+            <p>
+                Comfortable browsing experience
+                across different devices.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🔧</div>
+
+            <h3>Easy Updates</h3>
+
+            <p>
+                Content and sections can be
+                updated whenever needed.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section class="section">
+
+    <h2>Development Process</h2>
+
+    <p class="section-subtitle">
+        From design to testing, every step
+        focuses on responsive performance.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="process-number">01</div>
+
+            <h3>Planning</h3>
+
+            <p>
+                We understand your website,
+                audience and device requirements.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="process-number">02</div>
+
+            <h3>Design</h3>
+
+            <p>
+                We create a clean layout that
+                works across different screens.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="process-number">03</div>
+
+            <h3>Development</h3>
+
+            <p>
+                We build the responsive website
+                using modern web technologies.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="process-number">04</div>
+
+            <h3>Testing</h3>
+
+            <p>
+                We test the website on different
+                screen sizes before launch.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>Ready for a Responsive Website?</h2>
+
+    <p>
+        Give your visitors a smooth experience
+        on every device.
+    </p>
+
+    <a href="start-project.html" class="btn">
+        Start Your Project
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Premium Digital Studio</strong>.
+        All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

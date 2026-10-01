@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>E-Commerce Website Project</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+nav {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(2, 6, 23, 0.65),
+            rgba(2, 6, 23, 0.85)
+        ),
+        url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: #3b82f6;
+}
+
+/* FEATURES */
+
+section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+}
+
+.card h2 {
+    color: #60a5fa;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #01030b;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <a href="projects.html" class="back">
+        ← Back to Projects
+    </a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Modern <span>E-Commerce Website</span>
+        </h1>
+
+        <p>
+            A clean online shopping experience
+            designed to showcase products,
+            attract customers and grow sales.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Start a Similar Project
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section>
+
+    <h2 class="section-title">
+        Project Features
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>Product Showcase</h2>
+
+            <p>
+                Attractive product layouts
+                designed for online stores.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Responsive Design</h2>
+
+            <p>
+                Smooth shopping experience
+                on mobile, tablet and desktop.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Modern Shopping</h2>
+
+            <p>
+                Clean interface designed
+                for customers and businesses.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Premium Digital Studio.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

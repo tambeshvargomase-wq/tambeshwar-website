@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Business Website Services | Premium Studio</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            width: 100%;
+            padding: 20px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #ffffff;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            box-shadow:
+                0 4px 20px rgba(15, 23, 42, 0.08);
+        }
+
+        .logo {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #1e293b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 110px 7%;
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(37, 99, 235, 0.18),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(124, 58, 237, 0.15),
+                    transparent 35%
+                ),
+                #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+
+            color: #64748b;
+            font-size: 20px;
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 90px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+
+            color: #64748b;
+        }
+
+        /* CARDS */
+
+        .cards {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+
+            background: #ffffff;
+
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(15, 23, 42, 0.06);
+
+            transition: 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+
+            border-color: #93c5fd;
+
+            box-shadow:
+                0 20px 45px rgba(37, 99, 235, 0.14);
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 20px;
+
+            background: linear-gradient(
+                135deg,
+                #dbeafe,
+                #ede9fe
+            );
+
+            border-radius: 16px;
+
+            font-size: 28px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        /* FEATURES */
+
+        .features {
+            background: #ffffff;
+        }
+
+        .feature-list {
+            max-width: 900px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 25px;
+
+            background: #f8fafc;
+
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+            color: #0f172a;
+        }
+
+        .feature p {
+            color: #64748b;
+        }
+
+        /* PROCESS */
+
+        .process {
+            max-width: 1000px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .number {
+            width: 55px;
+            height: 55px;
+
+            margin: 0 auto 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+            color: white;
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .process-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #64748b;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 90px 7%;
+
+            text-align: center;
+
+            background: #0f172a;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 15px 28px;
+
+            background: #2563eb;
+            color: white;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 25px 7%;
+
+            text-align: center;
+
+            background: #020617;
+            color: #64748b;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 70px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .cards,
+            .feature-list,
+            .process {
+                grid-template-columns: 1fr;
+            }
+
+            .cta {
+                padding: 70px 20px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>
+        Professional
+        <span>Business Websites</span>
+    </h1>
+
+    <p>
+        Modern business websites designed to build trust,
+        attract customers and help your business grow online.
+    </p>
+
+</section>
+
+
+<!-- ABOUT SERVICE -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        What Is a Business Website?
+    </h2>
+
+    <p class="section-subtitle">
+
+        A professional business website gives your
+        company a strong online presence and makes it
+        easier for customers to understand your services,
+        trust your brand and contact you.
+
+    </p>
+
+</section>
+
+
+<!-- BENEFITS -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        Why Your Business Needs a Website
+    </h2>
+
+    <p class="section-subtitle">
+        A modern website can help your business
+        create a stronger digital presence.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🌐</div>
+
+            <h3>Online Presence</h3>
+
+            <p>
+                Give your business a professional
+                presence that customers can find online.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🤝</div>
+
+            <h3>Build Trust</h3>
+
+            <p>
+                Present your business professionally
+                and create confidence with visitors.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">📈</div>
+
+            <h3>Business Growth</h3>
+
+            <p>
+                Reach more people and create new
+                opportunities through your website.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="section features">
+
+    <h2 class="section-title">
+        What's Included
+    </h2>
+
+    <p class="section-subtitle">
+        Your business website can include these
+        important professional features.
+    </p>
+
+    <div class="feature-list">
+
+        <div class="feature">
+
+            <h3>🎨 Modern Design</h3>
+
+            <p>
+                Clean and professional visual design
+                built around your business.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>📱 Responsive Design</h3>
+
+            <p>
+                Works smoothly across mobile,
+                tablet and desktop devices.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>⚡ Fast Performance</h3>
+
+            <p>
+                Lightweight structure designed
+                for a smooth browsing experience.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>🔍 SEO Basics</h3>
+
+            <p>
+                SEO-friendly structure to help
+                search engines understand your website.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>📩 Contact System</h3>
+
+            <p>
+                Make it easy for visitors to
+                contact your business.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>⚙️ Customization</h3>
+
+            <p>
+                Content and design can be customized
+                according to your requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        Our Development Process
+    </h2>
+
+    <p class="section-subtitle">
+        We follow a simple process from idea
+        to final website.
+    </p>
+
+    <div class="process">
+
+        <div class="process-card">
+
+            <div class="number">01</div>
+
+            <h3>Discussion</h3>
+
+            <p>
+                Understand your business,
+                goals and requirements.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="number">02</div>
+
+            <h3>Planning</h3>
+
+            <p>
+                Plan the structure,
+                content and design.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="number">03</div>
+
+            <h3>Development</h3>
+
+            <p>
+                Build and customize
+                the complete website.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="number">04</div>
+
+            <h3>Launch</h3>
+
+            <p>
+                Test the website and
+                prepare it for launch.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Build Your Business Website?
+    </h2>
+
+    <p>
+        Let's turn your business idea into
+        a professional digital experience.
+    </p>
+
+    <a
+        href="start-project.html"
+        class="btn">
+
+        Start Your Project →
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Premium Digital Studio.
+        All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | Premium Digital Studio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+nav {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+
+.faq-hero {
+    text-align: center;
+    padding: 100px 20px 70px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #1e3a8a,
+            #020617 60%
+        );
+}
+
+.faq-hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.faq-hero h1 span {
+    color: #60a5fa;
+}
+
+.faq-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 19px;
+}
+
+/* FAQ */
+
+.faq-section {
+    padding: 80px 20px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.faq-item:hover {
+    border-color: #3b82f6;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 22px 25px;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+    text-align: left;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.faq-question span {
+    float: right;
+    color: #60a5fa;
+    font-size: 24px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 25px 22px;
+    color: #94a3b8;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(45deg);
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #dbeafe;
+    margin-bottom: 25px;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 30px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background: white;
+    color: #2563eb;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #01030b;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .faq-hero h1 {
+        font-size: 40px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+   
+   <div class="nav-links">
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="pricing.html">Pricing</a>
+
+</div>
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="faq-hero">
+
+    <h1>
+        Frequently Asked <span>Questions</span>
+    </h1>
+
+    <p>
+        Find answers to common questions
+        about our websites and digital solutions.
+    </p>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq-section">
+
+    <div class="faq-container">
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                How long does it take to build a website?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    The timeline depends on the project size,
+                    number of pages and required features.
+                    Simple websites can be completed faster,
+                    while larger projects need more time.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Will the website work on mobile?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. Our websites are designed to be
+                    responsive and work across phones,
+                    tablets and desktop devices.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Can the website be customized?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. Design, content, colors,
+                    sections and functionality can be
+                    customized according to project needs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Can you add new features later?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. Additional pages, features and
+                    improvements can be added as the
+                    project grows.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Do you provide website maintenance?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. Website updates, content changes,
+                    design improvements and bug fixes
+                    can be handled when required.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                How can I start a project?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Simply contact us with your project
+                    idea and requirements. We can then
+                    discuss the next steps.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Still Have Questions?
+    </h2>
+
+    <p>
+        Let's discuss your project and
+        find the right digital solution.
+    </p>
+
+    <a href="contact.html">
+        Contact Us
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Premium Digital Studio.
+        All rights reserved.
+    </p>
+
+    <p>
+        Built with HTML, CSS & JavaScript.
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(function(question) {
+
+    question.addEventListener("click", function() {
+
+        const item = question.parentElement;
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

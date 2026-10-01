@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Startup Websites | Premium Digital Studio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    padding: 20px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.10);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(2, 6, 23, 0.90),
+            rgba(15, 23, 42, 0.78)
+        );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa,
+            #22d3ee
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* SECTION */
+
+.section {
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 50px;
+
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* CARDS */
+
+.grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 32px;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+
+    transition: 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.15);
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* PROCESS */
+
+.process {
+    background: #ffffff;
+}
+
+.process-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+/* CTA */
+
+.cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.cta p {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 7%;
+
+    background: #020617;
+
+    color: #94a3b8;
+
+    text-align: center;
+}
+
+footer strong {
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Startup Websites
+        </h1>
+
+        <p>
+            Build a powerful digital presence for
+            your startup with a modern, professional
+            and scalable website.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section">
+
+    <h2>
+        What Is a Startup Website?
+    </h2>
+
+    <p class="section-subtitle">
+
+        A startup website helps new businesses
+        present their idea, build trust and
+        connect with potential customers.
+
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="icon">🚀</div>
+
+            <h3>
+                Strong First Impression
+            </h3>
+
+            <p>
+                Present your startup with a clean
+                and professional digital identity.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🎯</div>
+
+            <h3>
+                Clear Goals
+            </h3>
+
+            <p>
+                Explain your product, service and
+                value clearly to your visitors.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">📈</div>
+
+            <h3>
+                Built to Grow
+            </h3>
+
+            <p>
+                Create a website structure that can
+                grow with your startup.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="section process">
+
+    <h2>
+        What's Included
+    </h2>
+
+    <p class="section-subtitle">
+
+        Everything your startup needs to create
+        a professional online presence.
+
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="icon">🎨</div>
+
+            <h3>
+                Modern Design
+            </h3>
+
+            <p>
+                Clean and attractive design
+                created for your brand.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">📱</div>
+
+            <h3>
+                Responsive Layout
+            </h3>
+
+            <p>
+                Works smoothly on mobile,
+                tablet and desktop.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">⚡</div>
+
+            <h3>
+                Fast Performance
+            </h3>
+
+            <p>
+                Optimized structure for a
+                smooth browsing experience.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🔍</div>
+
+            <h3>
+                SEO Basics
+            </h3>
+
+            <p>
+                SEO-friendly structure to help
+                visitors discover your startup.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💡</div>
+
+            <h3>
+                Custom Features
+            </h3>
+
+            <p>
+                Features can be designed around
+                your startup requirements.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🔧</div>
+
+            <h3>
+                Easy Customization
+            </h3>
+
+            <p>
+                Content and sections can be
+                updated as your startup grows.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="section">
+
+    <h2>
+        Development Process
+    </h2>
+
+    <p class="section-subtitle">
+
+        A simple process from idea to launch.
+
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="process-number">
+                01
+            </div>
+
+            <h3>
+                Project Discussion
+            </h3>
+
+            <p>
+                We understand your startup idea,
+                goals and requirements.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="process-number">
+                02
+            </div>
+
+            <h3>
+                Design & Planning
+            </h3>
+
+            <p>
+                We plan the structure and
+                visual direction.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="process-number">
+                03
+            </div>
+
+            <h3>
+                Development
+            </h3>
+
+            <p>
+                We build the website using
+                modern web technologies.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="process-number">
+                04
+            </div>
+
+            <h3>
+                Testing & Launch
+            </h3>
+
+            <p>
+                We test the website and
+                prepare it for launch.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Build Your Startup Website?
+    </h2>
+
+    <p>
+        Turn your startup idea into a
+        professional digital experience.
+    </p>
+
+    <a
+        href="start-project.html"
+        class="btn">
+
+        Start Your Project
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Premium Digital Studio</strong>.
+        All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

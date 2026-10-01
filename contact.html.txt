@@ -218,24 +218,6 @@ nav {
     color: #60a5fa;
     font-weight: bold;
 }
-  
- .whatsapp-btn {
-    display: block;
-    margin-top: 20px;
-    padding: 14px;
-    text-align: center;
-    background: #22c55e;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.whatsapp-btn:hover {
-    background: #16a34a;
-    transform: translateY(-2px);
-}
 
 /* FOOTER */
 
@@ -285,22 +267,21 @@ footer {
         Premium Studio
     </div>
 
-   <div class="nav-links">
+    <div class="nav-links">
 
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="why-us.html">Why Us</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-    <a href="pricing.html">Pricing</a>
+        <a href="index.html">Home</a>
 
-</div>
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
 </nav>
-
 
 
 <!-- HERO -->
@@ -494,11 +475,6 @@ footer {
 
             </form>
 
-             <a href="https://wa.me/919022713831"
-             target="_blank" class="whatsapp-btn">
-                 contact me on whatsapp
-             </a>
-
         </div>
 
     </div>
@@ -535,24 +511,10 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const service = document.getElementById("service").value;
-    const projectMessage = document.getElementById("message").value;
-
-    const whatsappMessage =
-        "New Project Inquiry%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Email: " + encodeURIComponent(email) + "%0A" +
-        "Service: " + encodeURIComponent(service) + "%0A" +
-        "Project Details: " + encodeURIComponent(projectMessage);
-
-    const whatsappURL =
-        "https://wa.me/919022713831?text=" + whatsappMessage;
 
     message.textContent =
-        "Opening WhatsApp...";
-
-    window.open(whatsappURL, "_blank");
+        "Thank you, " + name +
+        "! Your inquiry has been received.";
 
     form.reset();
 

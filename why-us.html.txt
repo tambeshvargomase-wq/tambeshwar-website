@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Why Choose Us | Premium Digital Studio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+nav {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+
+.why-hero {
+    text-align: center;
+    padding: 100px 20px 70px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #1e3a8a,
+            #020617 60%
+        );
+}
+
+.why-hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.why-hero h1 span {
+    color: #60a5fa;
+}
+
+.why-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 19px;
+}
+
+/* WHY US */
+
+.why-section {
+    padding: 80px 7%;
+}
+
+.why-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 35px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.18);
+}
+
+.why-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.why-card h2 {
+    color: #60a5fa;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #94a3b8;
+}
+
+/* RESULTS */
+
+.results {
+    padding: 80px 7%;
+    background: #0f172a;
+}
+
+.results-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.results-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.result-box {
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+}
+
+.result-box h2 {
+    color: #60a5fa;
+    font-size: 35px;
+}
+
+.result-box p {
+    color: #94a3b8;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #dbeafe;
+    margin-bottom: 25px;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 30px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background: white;
+    color: #2563eb;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #01030b;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .why-hero h1 {
+        font-size: 40px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="why-hero">
+
+    <h1>
+        Why <span>Choose Us?</span>
+    </h1>
+
+    <p>
+        We combine modern design, clean development
+        and business-focused thinking to create
+        better digital experiences.
+    </p>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section class="why-section">
+
+    <div class="why-grid">
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🎨
+            </div>
+
+            <h2>
+                Modern Design
+            </h2>
+
+            <p>
+                Clean and premium interfaces
+                designed to create a strong
+                first impression.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                📱
+            </div>
+
+            <h2>
+                Fully Responsive
+            </h2>
+
+            <p>
+                Websites built to look great
+                on phones, tablets and desktops.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                ⚡
+            </div>
+
+            <h2>
+                Fast Performance
+            </h2>
+
+            <p>
+                Clean code and optimized
+                experiences for faster websites.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🎯
+            </div>
+
+            <h2>
+                Business Focused
+            </h2>
+
+            <p>
+                Every section is designed
+                around real business goals.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🔧
+            </div>
+
+            <h2>
+                Custom Solutions
+            </h2>
+
+            <p>
+                Features and layouts can be
+                customized for different projects.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🤝
+            </div>
+
+            <h2>
+                Professional Support
+            </h2>
+
+            <p>
+                Clear communication and
+                reliable project support.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- RESULTS -->
+
+<section class="results">
+
+    <h2 class="results-title">
+        Our Focus
+    </h2>
+
+    <div class="results-grid">
+
+        <div class="result-box">
+
+            <h2>
+                100%
+            </h2>
+
+            <p>
+                Responsive
+            </p>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>
+                24/7
+            </h2>
+
+            <p>
+                Digital Presence
+            </p>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>
+                6+
+            </h2>
+
+            <p>
+                Core Skills
+            </p>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>
+                10
+            </h2>
+
+            <p>
+                Website Pages
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Grow Online?
+    </h2>
+
+    <p>
+        Let's create a website built
+        around your goals.
+    </p>
+
+    <a href="contact.html">
+        Start a Project
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Premium Digital Studio.
+        All rights reserved.
+    </p>
+
+    <p>
+        Built with HTML, CSS & JavaScript.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

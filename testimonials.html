@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Skills | Premium Digital Studio</title>
+<title>Testimonials | Premium Digital Studio</title>
 
 <style>
 
@@ -59,7 +59,7 @@ nav {
 
 /* HERO */
 
-.skills-hero {
+.testimonial-hero {
     text-align: center;
     padding: 100px 20px 70px;
 
@@ -71,38 +71,38 @@ nav {
         );
 }
 
-.skills-hero h1 {
+.testimonial-hero h1 {
     font-size: 55px;
     margin-bottom: 20px;
 }
 
-.skills-hero h1 span {
+.testimonial-hero h1 span {
     color: #60a5fa;
 }
 
-.skills-hero p {
+.testimonial-hero p {
     max-width: 700px;
     margin: auto;
     color: #cbd5e1;
     font-size: 19px;
 }
 
-/* SKILLS */
+/* TESTIMONIALS */
 
-.skills-section {
+.testimonials-section {
     padding: 80px 7%;
 }
 
-.skills-grid {
+.testimonials-grid {
     max-width: 1100px;
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.skill-card {
+.testimonial-card {
     background: #0f172a;
     border: 1px solid #1e293b;
     padding: 30px;
@@ -110,65 +110,53 @@ nav {
     transition: 0.3s;
 }
 
-.skill-card:hover {
+.testimonial-card:hover {
     transform: translateY(-8px);
     border-color: #3b82f6;
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.18);
 }
 
-.skill-card h2 {
-    color: #60a5fa;
-    margin-bottom: 12px;
+.stars {
+    color: #facc15;
+    font-size: 20px;
+    margin-bottom: 18px;
 }
 
-.skill-card p {
+.testimonial-card p {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.client-avatar {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.client h3 {
+    font-size: 17px;
+}
+
+.client span {
     color: #94a3b8;
-    margin-bottom: 20px;
-}
-
-/* PROGRESS */
-
-.skill-bar {
-    width: 100%;
-    height: 10px;
-    background: #1e293b;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        #2563eb,
-        #60a5fa
-    );
-
-    border-radius: 10px;
-}
-
-.html {
-    width: 90%;
-}
-
-.css {
-    width: 85%;
-}
-
-.javascript {
-    width: 75%;
-}
-
-.uiux {
-    width: 80%;
-}
-
-.responsive {
-    width: 88%;
-}
-
-.performance {
-    width: 82%;
+    font-size: 14px;
 }
 
 /* CTA */
@@ -197,11 +185,14 @@ nav {
 .cta a {
     display: inline-block;
     padding: 15px 30px;
+
     border: 1px solid white;
     border-radius: 10px;
+
     color: white;
     text-decoration: none;
     font-weight: bold;
+
     transition: 0.3s;
 }
 
@@ -234,11 +225,11 @@ footer {
         gap: 15px;
     }
 
-    .skills-hero h1 {
+    .testimonial-hero h1 {
         font-size: 40px;
     }
 
-    .skills-grid {
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
@@ -279,121 +270,131 @@ footer {
 </nav>
 
 
+  
+
 <!-- HERO -->
 
-<section class="skills-hero">
+<section class="testimonial-hero">
 
     <h1>
-        Our <span>Skills</span>
+        Client <span>Testimonials</span>
     </h1>
 
     <p>
-        Technical skills and expertise used
-        to create modern, responsive and
-        professional digital experiences.
+        What clients value about our
+        design, development and digital solutions.
     </p>
 
 </section>
 
 
-<!-- SKILLS -->
+<!-- TESTIMONIALS -->
 
-<section class="skills-section">
+<section class="testimonials-section">
 
-    <div class="skills-grid">
+    <div class="testimonials-grid">
 
 
-        <div class="skill-card">
+        <div class="testimonial-card">
 
-            <h2>HTML</h2>
+            <div class="stars">
+                ★★★★★
+            </div>
 
             <p>
-                Strong foundation in clean
-                and structured web pages.
+                "The website looks modern,
+                professional and works smoothly
+                on mobile devices."
             </p>
 
-            <div class="skill-bar">
-                <div class="skill-progress html"></div>
+            <div class="client">
+
+                <div class="client-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <h3>
+                        Alex Morgan
+                    </h3>
+
+                    <span>
+                        Business Owner
+                    </span>
+
+                </div>
+
             </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="testimonial-card">
 
-            <h2>CSS</h2>
+            <div class="stars">
+                ★★★★★
+            </div>
 
             <p>
-                Modern layouts, responsive
-                design and visual styling.
+                "The design is clean and easy
+                to use. It gives our brand a
+                much more professional presence."
             </p>
 
-            <div class="skill-bar">
-                <div class="skill-progress css"></div>
+            <div class="client">
+
+                <div class="client-avatar">
+                    S
+                </div>
+
+                <div>
+
+                    <h3>
+                        Sophia Williams
+                    </h3>
+
+                    <span>
+                        Startup Founder
+                    </span>
+
+                </div>
+
             </div>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="testimonial-card">
 
-            <h2>JavaScript</h2>
-
-            <p>
-                Interactive features and
-                dynamic website functionality.
-            </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress javascript"></div>
+            <div class="stars">
+                ★★★★★
             </div>
 
-        </div>
-
-
-        <div class="skill-card">
-
-            <h2>UI / UX</h2>
-
             <p>
-                Clean interfaces focused on
-                usability and user experience.
+                "Excellent attention to detail
+                and a smooth overall experience.
+                The final website feels premium."
             </p>
 
-            <div class="skill-bar">
-                <div class="skill-progress uiux"></div>
-            </div>
+            <div class="client">
 
-        </div>
+                <div class="client-avatar">
+                    D
+                </div>
 
+                <div>
 
-        <div class="skill-card">
+                    <h3>
+                        Daniel Carter
+                    </h3>
 
-            <h2>Responsive Design</h2>
+                    <span>
+                        Creative Professional
+                    </span>
 
-            <p>
-                Websites designed to work
-                smoothly across all devices.
-            </p>
+                </div>
 
-            <div class="skill-bar">
-                <div class="skill-progress responsive"></div>
-            </div>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <h2>Performance</h2>
-
-            <p>
-                Focus on fast loading,
-                clean code and better performance.
-            </p>
-
-            <div class="skill-bar">
-                <div class="skill-progress performance"></div>
             </div>
 
         </div>
@@ -409,12 +410,12 @@ footer {
 <section class="cta">
 
     <h2>
-        Let's Build Something Great
+        Ready to Build Your Website?
     </h2>
 
     <p>
-        Have an idea? Let's turn it
-        into a professional website.
+        Let's create a professional
+        digital experience for your brand.
     </p>
 
     <a href="contact.html">

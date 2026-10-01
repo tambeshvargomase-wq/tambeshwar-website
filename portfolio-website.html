@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Website Services | Premium Studio</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            width: 100%;
+            padding: 20px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #ffffff;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            box-shadow:
+                0 4px 20px rgba(15, 23, 42, 0.08);
+        }
+
+        .logo {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #1e293b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 110px 7%;
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(37, 99, 235, 0.18),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(124, 58, 237, 0.15),
+                    transparent 35%
+                ),
+                #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+
+            color: #64748b;
+            font-size: 20px;
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 90px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+
+            color: #64748b;
+        }
+
+        /* CARDS */
+
+        .cards {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+
+            background: #ffffff;
+
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(15, 23, 42, 0.06);
+
+            transition: 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+
+            border-color: #93c5fd;
+
+            box-shadow:
+                0 20px 45px rgba(37, 99, 235, 0.14);
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 20px;
+
+            background: linear-gradient(
+                135deg,
+                #dbeafe,
+                #ede9fe
+            );
+
+            border-radius: 16px;
+
+            font-size: 28px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        /* FEATURES */
+
+        .features {
+            background: #ffffff;
+        }
+
+        .feature-list {
+            max-width: 900px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 25px;
+
+            background: #f8fafc;
+
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            border-color: #93c5fd;
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+            color: #0f172a;
+        }
+
+        .feature p {
+            color: #64748b;
+        }
+
+        /* PROCESS */
+
+        .process {
+            max-width: 1000px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .number {
+            width: 55px;
+            height: 55px;
+
+            margin: 0 auto 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+            color: white;
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .process-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #64748b;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 90px 7%;
+
+            text-align: center;
+
+            background: #0f172a;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 15px 28px;
+
+            background: #2563eb;
+            color: white;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-4px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 25px 7%;
+
+            text-align: center;
+
+            background: #020617;
+            color: #64748b;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 70px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .cards,
+            .feature-list,
+            .process {
+                grid-template-columns: 1fr;
+            }
+
+            .cta {
+                padding: 70px 20px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Premium Studio
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>
+        Professional
+        <span>Portfolio Websites</span>
+    </h1>
+
+    <p>
+        Modern portfolio websites designed to
+        showcase your work, skills, experience
+        and achievements professionally.
+    </p>
+
+</section>
+
+
+<!-- ABOUT SERVICE -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        What Is a Portfolio Website?
+    </h2>
+
+    <p class="section-subtitle">
+
+        A portfolio website is your personal digital
+        space where you can showcase your projects,
+        skills, experience and achievements.
+        It helps visitors understand your work
+        and professional identity.
+
+    </p>
+
+</section>
+
+
+<!-- BENEFITS -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        Why You Need a Portfolio Website
+    </h2>
+
+    <p class="section-subtitle">
+
+        Build a strong professional presence
+        and present your work in one place.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">💼</div>
+
+            <h3>Showcase Your Work</h3>
+
+            <p>
+                Present your best projects and
+                achievements in a professional way.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">⭐</div>
+
+            <h3>Build Your Brand</h3>
+
+            <p>
+                Create a strong personal identity
+                with a unique online presence.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🚀</div>
+
+            <h3>Grow Opportunities</h3>
+
+            <p>
+                Make it easier for clients,
+                recruiters and businesses to discover you.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="section features">
+
+    <h2 class="section-title">
+        What's Included
+    </h2>
+
+    <p class="section-subtitle">
+
+        Your portfolio website can include
+        professional features designed around you.
+
+    </p>
+
+    <div class="feature-list">
+
+        <div class="feature">
+
+            <h3>🎨 Modern Design</h3>
+
+            <p>
+                Clean and attractive design
+                focused on your personal brand.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>📱 Responsive Design</h3>
+
+            <p>
+                Your portfolio works smoothly
+                on mobile, tablet and desktop.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>💼 Project Showcase</h3>
+
+            <p>
+                Dedicated sections to display
+                your projects and completed work.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>🧠 Skills Section</h3>
+
+            <p>
+                Clearly present your technical
+                and professional skills.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>📄 About & Experience</h3>
+
+            <p>
+                Share your background, experience,
+                education and professional journey.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <h3>📩 Contact System</h3>
+
+            <p>
+                Give visitors an easy way
+                to contact you for opportunities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PORTFOLIO SECTIONS -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        What You Can Showcase
+    </h2>
+
+    <p class="section-subtitle">
+
+        Organize your professional information
+        into clear and useful sections.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">👨‍💻</div>
+
+            <h3>About Me</h3>
+
+            <p>
+                Introduce yourself and explain
+                your professional journey.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🛠️</div>
+
+            <h3>Skills</h3>
+
+            <p>
+                Display your technical skills,
+                tools and technologies.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">📂</div>
+
+            <h3>Projects</h3>
+
+            <p>
+                Showcase your completed projects
+                with detailed information.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        Our Development Process
+    </h2>
+
+    <p class="section-subtitle">
+
+        We turn your professional information
+        into a polished portfolio website.
+
+    </p>
+
+    <div class="process">
+
+        <div class="process-card">
+
+            <div class="number">01</div>
+
+            <h3>Discussion</h3>
+
+            <p>
+                Understand your goals,
+                skills and requirements.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="number">02</div>
+
+            <h3>Planning</h3>
+
+            <p>
+                Plan the sections,
+                content and visual direction.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="number">03</div>
+
+            <h3>Development</h3>
+
+            <p>
+                Build and customize
+                your complete portfolio.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="number">04</div>
+
+            <h3>Launch</h3>
+
+            <p>
+                Test the website and
+                prepare it for launch.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Build Your Portfolio?
+    </h2>
+
+    <p>
+        Let's turn your skills and work
+        into a professional digital portfolio.
+    </p>
+
+    <a
+        href="start-project.html"
+        class="btn">
+
+        Start Your Project →
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Premium Digital Studio.
+        All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>
